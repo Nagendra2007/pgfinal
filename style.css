@@ -12,6 +12,7 @@ body{
     background-color: #543310;
     display : flex;
     align-items: center;
+    z-index : 999
 }
 #hamburger{
     color : #AF8F6F;
@@ -23,7 +24,50 @@ body{
     width : 100%;
     height : 100%;
     inset : 0;
-    z-index : 999;
+    z-index : 9999;
     background-color: transparent;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
+    position : fixed;
+    display : none; 
+}
+.sidemenu{
+    width : 45%;
+    background-color: #AF8F6F;
+    height : 100%;
+}
+.option{
+    width : 100%;
+    height: 45px;
+    font-size: 22px;
+    color : #543310;
+    font-family:  "Arima";
+    display : flex;
+    align-items: center;
+}
+.option:hover{
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.08);
+}
+#into{
+    display : flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    height: 45px;
+}
+#cross{
+   padding-right :8px;
+   color : #543310;
+   cursor : pointer;
+}
+.sideanim{
+    animation : goback 0.45s linear 0s 1;
+}
+@keyframes goback {
+    from {transform : translateX(-100%)}
+    to {transform : translateX(0%)}
+}
+.option > i{
+    position : relative ;
+    bottom : 1.8px;
 }
