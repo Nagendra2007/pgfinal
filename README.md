@@ -1,2 +1,1 @@
-# AI Messenger Project
-Replace placeholders with real code from canvas.
+Single-folder AI Messenger. Replace App.jsx with full version.
